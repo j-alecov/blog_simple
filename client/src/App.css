@@ -1,0 +1,80 @@
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+
+	/* Heading height variable*/
+	--heading-height: 30em;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	height: var(--heading-height);
+}
+
+/* Create angled background with 'before' pseudo-element */
+header::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 6em;
+	width: 100%;
+	height: calc(var(--heading-height) + 10em);
+	z-index: -1;
+	transform: skewY(-3.5deg);
+	background: 
+		linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)),
+		url(https://images.unsplash.com/photo-1554188248-986adbb73be4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9) no-repeat center,
+		linear-gradient(#4e4376, #2b5876);
+	background-size: cover;
+	border-bottom: .2em solid #fff;
+}
+
+h1 {
+	font-size: calc(2.8em + 2.6vw);
+	font-weight: 700;
+	letter-spacing: .01em;
+	padding: 10rem 0 0 4.5rem;
+	text-shadow: .022em .022em .022em #111;
+	color: #fff;
+}
+
+main {
+	padding: calc(var(--heading-height) + 1.5vw) 4em 0;
+}

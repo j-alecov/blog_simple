@@ -1,0 +1,28 @@
+ul{
+    list-style: none;
+    padding: 0%;
+    width: 40%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    line-height: 2rem;
+    border-bottom: 1px dotted #777;
+}
+
+h3 {
+    font-size: 24pt;
+    font-weight: 400;
+}
+
+p{
+    font-size: 14pt;
+    font-weight: 400;
+}
+
+.date{
+    color: #212121;
+    opacity: 30%;
+    font-size: 12pt;
+}

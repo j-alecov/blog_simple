@@ -1,0 +1,11 @@
+#newPost{
+    list-style: none;
+    padding: 0%;
+    width: 40%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2rem;
+    border-bottom: 1px dotted #777;
+    text-align: center;
+}
+
